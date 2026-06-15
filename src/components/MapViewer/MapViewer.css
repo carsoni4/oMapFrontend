@@ -1,0 +1,35 @@
+.office-map {
+  position: relative;
+  width: 760px;
+  height: 460px;
+  background: white;
+  border: 3px solid var(--color-map-border);
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 8px;
+  padding: 12px;
+}
+
+.room {
+  border: 2px solid var(--color-room-border);
+  border-radius: 8px;
+  background: var(--color-room-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  font-weight: 700;
+  user-select: none;
+}
+
+.room-large {
+  grid-row: span 2;
+}
+
+.room-wide {
+  grid-column: span 3;
+}

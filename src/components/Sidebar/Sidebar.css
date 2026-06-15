@@ -1,0 +1,135 @@
+.sidebar {
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.sidebar p {
+  margin: 6px 0 0;
+  color: var(--color-muted);
+}
+
+.device-count {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.primary-button:hover {
+  filter: brightness(0.95);
+}
+
+.device-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.device-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.device-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1);
+}
+
+.device-color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.06);
+}
+
+.device-info {
+  min-width: 0;
+}
+
+.device-info h3 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.device-info p {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.device-location {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-muted);
+}
+
+.device-card-button {
+  padding: 7px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #f9fafb;
+  color: var(--color-text);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.device-card-button:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
